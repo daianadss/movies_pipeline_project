@@ -52,13 +52,13 @@ Esta fase, detalhada no script `01_inspecao_movies_metadata.py`, envolveu a limp
     -   Essas métricas foram então mescladas (`left join`) com o `df_metadata_clean` para criar um `df_final` enriquecido, contendo os metadados dos filmes e suas informações de avaliação.
 -   **Persistência:** O `df_final` foi salvo em formato CSV (`movies_metadata_cleaned.csv`) na pasta `data/processed/`, marcando o fim da fase de Transformação.
 
-### 💾 Fase de Carga (L) - Próximos Passos
+### Fase de Carga (L) - Próximos Passos
 
 A próxima etapa é carregar o dataset processado (`movies_metadata_cleaned.csv`) em um banco de dados relacional (SQLite) para análises e consultas posteriores. Esta fase será implementada no script `02_load_data_to_sqlite.py`.
 
 ---
 
-## 🏃‍♀️ Como Executar
+## Como Executar
 
 1.  **Pré-requisitos:** Certifique-se de ter Python (versão 3.x) e as bibliotecas necessárias instaladas (e.g., `pandas`, `numpy`, `sqlite3`). Recomenda-se usar um ambiente virtual.
 2.  **Clone o Repositório:**
